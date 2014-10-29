@@ -1,0 +1,74 @@
+\documentclass[xetex,serif]{beamer}
+\usepackage{xltxtra}
+
+\usepackage{listings}
+\lstset{
+  language=Ruby,
+  frame=none,
+  basicstyle=\small\ttfamily,
+  showspaces=false,
+  showstringspaces=false,
+  showtabs=false,
+  breaklines=true,
+  breakatwhitespace=true,
+  escapeinside={(*@}{@*)}}
+
+\usecolortheme{dove}
+\setmainfont[Mapping=tex-text]{Roboto}
+\setmonofont[Scale=MatchLowercase]{Cousine}
+\newfontfamily\commitfont{COMMIT}
+
+\setbeamersize{text margin left=15pt,
+  text margin right=15pt}
+
+\setbeamertemplate{frametitle}
+{
+  COMMIT/ WORKFLOW/ \insertframetitle
+  \par
+}
+
+\setbeamertemplate{title page}
+{
+  \vspace{-\fill}
+  \usebeamerfont{title}
+  {\Huge COMMIT/}\\[1cm]
+  \hspace{.10\textwidth}
+  \begin{minipage}[t]{.5\linewidth}
+    \usebeamerfont{title}\inserttitle
+  \end{minipage}
+
+  \vfill
+
+  \usebeamerfont{author}\insertauthor,\par
+  \usebeamerfont{institute}\insertinstitute\par
+  \vspace*{-\fill}
+}
+
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{subsection in head/foot shaded}[default][20]
+\logo{\includegraphics[height=.5cm]{img/logo}\hspace{.3cm}}
+
+\title{Title}
+\institute{Institute}
+\author{Author}
+\date{\today}
+
+\begin{document}
+
+\setbeamerfont{frametitle}{family=\commitfont}
+\setbeamerfont{title}{family=\commitfont,size*={26}{22}}
+\setbeamerfont{author}{family=\normalfont,size=\small}
+\setbeamerfont{institute}{family=\normalfont,size=\small}
+
+\maketitle
+
+\begin{frame}[fragile]
+  \frametitle{First!}
+\end{frame}
+
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:

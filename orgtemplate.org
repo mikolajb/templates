@@ -1,0 +1,12 @@
+#+TITLE: Title
+#+AUTHOR: Author
+
+#+STYLE: <link rel="stylesheet" type="text/css" href="http://stylesheet.css" />
+
+#+LATEX_CMD: xelatex
+#+LATEX_CLASS: article
+#+LATEX_HEADER: \usepackage{polski}
+#+LATEX_HEADER: \setmainfont[Mapping=tex-text]{Libre Baskerville}
+#+LATEX_HEADER: \setmonofont[Scale=MatchLowercase]{Cousine}
+#+LATEX_HEADER: \lstset{frame=none, basicstyle=\small\ttfamily, showspaces=false, showtabs=false, breaklines=true, breakatwhitespace=true}
+#+OPTIONS: toc:nil

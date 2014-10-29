@@ -1,0 +1,48 @@
+\documentclass[bigger,xetex,serif,aspectratio=169]{beamer}
+\usepackage{xltxtra}
+
+\usepackage[backend=bibtex]{biblatex}
+\bibliography{presentation.bib}
+\let\footnotesize\scriptsize
+
+\usepackage{listings}
+\lstset{
+  language=Ruby,
+  frame=none,
+  basicstyle=\small\ttfamily,
+  showspaces=false,
+  showstringspaces=false,
+  showtabs=false,
+  breaklines=true,
+  breakatwhitespace=true,
+  escapeinside={(*@}{@*)}}
+
+\usecolortheme{dove}
+\setmainfont{Libre Baskerville}[Mapping=tex-text]
+\setsansfont{Roboto}[Scale=MatchLowercase]
+\setmonofont{Cousine}[Scale=MatchLowercase]
+
+\setbeamerfont{title}{family=\sffamily}
+\setbeamerfont{frametitle}{family=\sffamily}
+\setbeamertemplate{navigation symbols}{\today: \inserttitle\hspace*{2em}\insertframenumber/\inserttotalframenumber}
+
+\title{Presentation}
+\author{Author}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{frame}
+  \begin{center}
+    {\Huge?}
+  \end{center}
+\end{frame}
+
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:

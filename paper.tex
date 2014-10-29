@@ -1,0 +1,48 @@
+\documentclass[12pt,a4paper,twocolumn]{article}
+\usepackage{xltxtra}
+\usepackage{fontspec}
+
+\usepackage[cm]{fullpage}
+
+\usepackage{listings}
+\lstset{
+  language=Ruby,
+  frame=single,
+  basicstyle=\scriptsize\ttfamily,
+  showspaces=false,
+  showstringspaces=false,
+  showtabs=false,
+  breaklines=true,
+  breakatwhitespace=true,
+  escapeinside={(*@}{@*)}}
+
+\setmainfont[Mapping=tex-text]{Libre Baskerville}
+\setmonofont[Scale=MatchLowercase]{Cousine}
+
+\title{Title}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+  Abstract
+\end{abstract}
+
+\tableofcontents
+
+\section{State of the art}
+\label{sec:state-art}
+
+\section{Future work}
+\label{sec:future-work}
+
+\bibliographystyle{plain}
+\bibliography{bibliography}
+
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
